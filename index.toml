@@ -24,6 +24,10 @@ file = "mods/akashic-tome.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/alexs-mobs.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 metafile = true
 
@@ -76,6 +80,10 @@ file = "mods/blood-magic.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/blueprint.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/bookshelf.pw.toml"
 metafile = true
 
@@ -104,6 +112,10 @@ file = "mods/chipped.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/citadel.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 metafile = true
 
@@ -124,6 +136,10 @@ file = "mods/common-capabilities.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/compact-machines.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 metafile = true
 
@@ -140,6 +156,10 @@ file = "mods/crafting-tweaks.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-big-cannons.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-enchantment-industry.pw.toml"
 metafile = true
 
@@ -148,7 +168,15 @@ file = "mods/create-goggles.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-industry.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-steam-n-rails.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-stuff-additions.pw.toml"
 metafile = true
 
 [[files]]
@@ -161,6 +189,10 @@ metafile = true
 
 [[files]]
 file = "mods/ctm.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cucumber.pw.toml"
 metafile = true
 
 [[files]]
@@ -177,6 +209,10 @@ metafile = true
 
 [[files]]
 file = "mods/dark-utilities.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ding.pw.toml"
 metafile = true
 
 [[files]]
@@ -248,6 +284,14 @@ file = "mods/gravestone-mod.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/immersive-aircraft.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/immersive-paintings.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/immersiveengineering.pw.toml"
 metafile = true
 
@@ -316,6 +360,10 @@ file = "mods/mantle.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/max-health-fix.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/mcjtylib.pw.toml"
 metafile = true
 
@@ -336,6 +384,10 @@ file = "mods/mekanism.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/minecraft-transit-railway.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/mining-gadgets.pw.toml"
 metafile = true
 
@@ -345,6 +397,10 @@ metafile = true
 
 [[files]]
 file = "mods/morph-o-tool.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mystical-agriculture.pw.toml"
 metafile = true
 
 [[files]]
@@ -369,6 +425,10 @@ metafile = true
 
 [[files]]
 file = "mods/pig-pen-cipher.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/pneumaticcraft-repressurized.pw.toml"
 metafile = true
 
 [[files]]
@@ -440,6 +500,10 @@ file = "mods/simply-backpacks.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/small-ships.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/smooth-boot-reloaded.pw.toml"
 metafile = true
 
@@ -461,6 +525,10 @@ metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supplementaries.pw.toml"
 metafile = true
 
 [[files]]
@@ -501,6 +569,10 @@ metafile = true
 
 [[files]]
 file = "mods/trash-cans.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/upgrade-aquatic.pw.toml"
 metafile = true
 
 [[files]]
