@@ -1,0 +1,13 @@
+name = "Integrated Dynamics"
+filename = "IntegratedDynamics-1.18.2-1.17.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yYzdQHJI/versions/zfcs5lYh/IntegratedDynamics-1.18.2-1.17.2.jar"
+hash-format = "sha1"
+hash = "318d8ab3a01cb27e8b3cd2babb2e8d921329a225"
+
+[update]
+[update.modrinth]
+mod-id = "yYzdQHJI"
+version = "zfcs5lYh"
