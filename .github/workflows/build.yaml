@@ -112,18 +112,13 @@ jobs:
           key: ${{ runner.os }}-packwiz-${{ hashFiles('index.toml') }}
           restore-keys: ${{ runner.os }}-packwiz
 
-      - name: build modrinth format modpack
-        run: packwiz modrinth export -o ${{ env.target-name }}.mrpack
-
-      - name: upload artifact (modrinth)
-        uses: actions/upload-artifact@v3
-        with:
-          name: "modrinth-modpack"
-          path: "${{ env.target-name }}.mrpack"
+      - name: build curseforge format modpack
+        run: packwiz cf export -o ${{ env.target-name }}.zip
+        
   release:
     needs: build-artifacts
     if: ${{ github.ref_type == 'tag' }}
-    name: Release to modrinth and github
+    name: Release to github
     runs-on: ubuntu-22.04
     steps:
       - name: Fetch Modrinth Modpack
@@ -139,20 +134,6 @@ jobs:
       - name: Create ${{ env.target-name }}.packwiz.zip
         run: zip -rq ${{ env.target-name }}.packwiz pw-modpack/  #  ${{ env.target-name }}.packwiz.zip
 
-      - name: Create Modrinth Release
-        id: modrinth-release
-        if: false
-        uses: Kir-Antipov/mc-publish@v3.2
-        with:
-          modrinth-id: ${{ secrets.MODRINTH_PROJECT }}
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          modrinth-featured: ${{ !(contains(github.ref, '-rc.')) }}
-          modrinth-unfeature-mode: ${{ ((contains(github.ref, '-rc.')) && 'none') || 'any' }} # "any" if production deploy, none otherwise
-          files-primary: "${{ env.target-name }}.mrpack"
-          files-extra: "${{ env.target-name }}.packwiz.zip"
-          version-type: ${{ ((contains(github.ref, '-rc.')) && 'beta') || 'release' }}
-          game-versions: 1.18.2
-
       - name: Create Github Release
         id: github-release
         uses: softprops/action-gh-release@v1
@@ -160,7 +141,7 @@ jobs:
           generate_release_notes: ${{ !(contains(github.ref, '-rc.')) }}
           prerelease: ${{ contains(github.ref, '-rc.') }}
           files: |
-            ${{ env.target-name }}.mrpack
+            ${{ env.target-name }}.zip
             ${{ env.target-name }}.packwiz.zip
       - if: ((steps.github-release.conclusion == 'success') || (steps.modrinth-release.conclusion == 'success'))
         run: echo "# Releases" >> $GITHUB_STEP_SUMMARY
